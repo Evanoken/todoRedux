@@ -7,6 +7,8 @@ import cors from 'cors';
 
 const app = express();
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 //setup cors
 app.use(cors());
 
